@@ -1,0 +1,350 @@
+@charset "UTF-8";
+
+.header__top,
+.header__info,
+.header__social,
+.header__user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__top {
+  padding: 10px 30px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .social__items {
+  -webkit-transition: all .2s ease-in;
+  -o-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+  display: block;
+  border-top: 1px solid #c2c2c2;
+  border-right: 1px solid #c2c2c2;
+  border-bottom: 1px solid #c2c2c2;
+  background-color: white;
+  width: 37px;
+  height: 36px;
+}
+
+.header .social__items:first-child {
+  border-left: 1px solid #c2c2c2;
+  background: url(../img/header/social/f.svg) center no-repeat;
+}
+
+.header .social__items:nth-child(2) {
+  border-left: 1px solid #c2c2c2;
+  background: url(../img/header/social/В.png) center no-repeat;
+}
+
+.header .social__items:nth-child(3) {
+  background: url(../img/header/social/twitter.svg) center no-repeat;
+}
+
+.header .social__items:nth-child(4) {
+  background: url(../img/header/social/Слой.png) center no-repeat;
+}
+
+.header .social__items:hover {
+  -webkit-box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+}
+
+.header__choice {
+  font-family: "ProximaNovaCond-Bold";
+  font-size: 15px;
+  color: #1f1f1f;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #C2C2C2;
+          text-decoration-color: #C2C2C2;
+  background: url(../img/header/location/_.png) no-repeat right;
+  width: 65px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  line-height: 1.286;
+}
+
+.header__location {
+  margin-right: 110px;
+}
+
+.header__location::before {
+  content: "";
+  position: absolute;
+  background: url(../img/header/location/geo.png) center no-repeat;
+  margin-left: -20px;
+  height: 16px;
+  width: 11px;
+}
+
+.header__phone-number {
+  font-size: 13px;
+  font-family: "ProximaNovaCond-Bold";
+  color: #1f1f1f;
+  line-height: 1.059;
+}
+
+.header__phone-number::before {
+  content: "";
+  position: absolute;
+  background: url(../img/header/location/phone.png) center no-repeat;
+  margin: 2px 0 0 -15px;
+  width: 12px;
+  height: 16px;
+}
+
+.header__user {
+  font-family: "ProximaNovaCond-Bold";
+}
+
+.header__register {
+  margin-right: 85px;
+}
+
+.header__register::before {
+  content: "";
+  position: absolute;
+  background: url(../img/header/user/user.png) center no-repeat;
+  margin: 2px 0 0 -22px;
+  width: 15px;
+  height: 14px;
+}
+
+.header__register-text {
+  border-bottom: 1px dashed #C2C2C2;
+  font-size: 17px;
+}
+
+.header__basket {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__basket::before {
+  content: "";
+  position: absolute;
+  background: url(../img/header/user/Layer.png) center no-repeat;
+  margin: 2px 0 0 -22px;
+  height: 15px;
+  width: 17px;
+}
+
+.header__basket-text {
+  border-bottom: 1px dashed #C2C2C2;
+  font-size: 17px;
+}
+
+.header__basket-product {
+  font-size: 14px;
+  font-family: "ProximaNova-SemiboldIt";
+  color: #b98348;
+  line-height: 1.286;
+  padding-left: 5px;
+  margin-left: 10px;
+  border-left: 1px solid #CBA276;
+}
+
+.header__bottom {
+  background: black;
+}
+
+.header__bottom .nav-submenu {
+  padding: 10px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__bottom .nav-submenu__items {
+  padding-left: 68px;
+  font-family: "ProximaNova-Regular";
+}
+
+.header__bottom .nav-submenu__items:first-child::before {
+  content: "";
+  position: absolute;
+  background: url(../img/header/submenu/logo.png) center no-repeat;
+  margin: -2px 0 0 -58px;
+  height: 36px;
+  width: 45px;
+}
+
+.header__bottom .nav-submenu h1,
+.header__bottom .nav-submenu p {
+  text-transform: uppercase;
+  color: white;
+}
+
+.header__bottom .nav-submenu__text:first-child {
+  font-size: 19px;
+}
+
+.header__bottom .nav-submenu__text:last-child {
+  margin-top: 2px;
+  font-size: 12px;
+}
+
+.header__bottom .nav-submenu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__bottom .nav-submenu__list-items:last-child a {
+  margin-right: 0;
+}
+
+.header__bottom .nav-submenu__list-items a {
+  margin-right: 2.6em;
+  font-size: 16px;
+  letter-spacing: 2px;
+  font-family: "ProximaNovaCond-Regular";
+  color: white;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.header__bottom .nav-submenu__list-items a:hover {
+  border-bottom: 1px dashed #C2C2C2;
+}
+
+/*Обнуление*/
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+/*--------------------*/
+
+@font-face {
+  font-family: "ProximaNova-Regular";
+  font-display: swap;
+  src: url("../fonts/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova-Regular.woff2") format("woff2");
+  font-weight: initial;
+  font-style: initial;
+}
+
+@font-face {
+  font-family: "ProximaNova-Bold";
+  font-display: swap;
+  src: url("../fonts/ProximaNova-Bold.woff") format("woff"), url("../fonts/ProximaNova-Bold.woff2") format("woff2");
+  font-weight: initial;
+  font-style: initial;
+}
+
+@font-face {
+  font-family: "ProximaNova-SemiboldIt";
+  font-display: swap;
+  src: url("../fonts/ProximaNova-SemiboldIt.woff") format("woff"), url("../fonts/ProximaNova-SemiboldIt.woff2") format("woff2");
+  font-weight: initial;
+  font-style: initial;
+}
+
+@font-face {
+  font-family: "ProximaNovaCond-Bold";
+  font-display: swap;
+  src: url("../fonts/ProximaNovaCond-Bold.woff") format("woff"), url("../fonts/ProximaNovaCond-Bold.woff2") format("woff2");
+  font-weight: initial;
+  font-style: initial;
+}
+
+@font-face {
+  font-family: "ProximaNovaCond-Regular";
+  font-display: swap;
+  src: url("../fonts/ProximaNovaCond-Regular.woff") format("woff"), url("../fonts/ProximaNovaCond-Regular.woff2") format("woff2");
+  font-weight: initial;
+  font-style: initial;
+}
+
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}

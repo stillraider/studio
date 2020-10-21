@@ -1,0 +1,184 @@
+.header {
+    &__wrapper {
+
+    }
+    &__top, &__info, &__social, &__user {
+        display: flex;
+    }
+    &__top {
+        padding: 10px 30px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .social__items {
+        transition: all .2s ease-in;
+        display: block;
+
+        border-top: 1px solid  rgb(194, 194, 194);
+        border-right: 1px solid  rgb(194, 194, 194);
+        border-bottom: 1px solid  rgb(194, 194, 194);
+        background-color: rgb(255, 255, 255);
+        &:first-child {
+            border-left: 1px solid  rgb(194, 194, 194);
+            background: url(../img/header/social/f.svg) center no-repeat;
+        }
+        &:nth-child(2) {
+            border-left: 1px solid  rgb(194, 194, 194);
+            background: url(../img/header/social/В.png) center no-repeat;
+        }
+        &:nth-child(3) {
+            background: url(../img/header/social/twitter.svg) center no-repeat;
+        }
+        &:nth-child(4) {
+            background: url(../img/header/social/Слой.png) center no-repeat;
+        }
+        &:hover {
+            box-shadow: 0 0 7px rgba(0,0,0,0.5);
+        }
+
+        width: 37px;
+        height: 36px;      
+    }
+    &__choice {
+        font-family: "ProximaNovaCond-Bold";
+        font-size: 15px;
+        color: rgb(31, 31, 31);
+        text-decoration: underline;
+        text-decoration-color: #C2C2C2;
+
+        background: url(../img/header/location/_.png) no-repeat right;
+        width: 65px;
+        appearance: none;
+        line-height: 1.286;
+    }
+    &__location {
+        margin-right: 110px;
+        &::before {
+            content: "";
+            position: absolute;
+            background: url(../img/header/location/geo.png) center no-repeat;
+            margin-left: -20px;
+
+            height: 16px;
+            width: 11px;
+        }  
+    }
+    &__phone {
+        &-number {
+            font-size: 13px;
+            font-family: "ProximaNovaCond-Bold";
+            color: rgb(31, 31, 31);
+            line-height: 1.059;  
+            &::before {
+                content: "";
+                position: absolute;
+                background: url(../img/header/location/phone.png) center no-repeat;
+                margin: 2px 0 0 -15px;
+
+                width: 12px;
+                height: 16px;
+            }  
+        }
+    }
+    &__user {
+        font-family: "ProximaNovaCond-Bold";
+    }
+    &__register {
+        &::before {
+            content: "";
+            position: absolute;
+            background: url(../img/header/user/user.png) center no-repeat;
+            margin: 2px 0 0 -22px;
+
+            width: 15px;
+            height: 14px;
+        }
+        margin-right: 85px;
+        &-text {
+            border-bottom: 1px dashed #C2C2C2;
+            font-size: 17px;
+        }
+    }
+    &__basket {
+        display: flex;
+        &::before {
+            content: "";
+            position: absolute;
+            background: url(../img/header/user/Layer.png) center no-repeat;
+            margin: 2px 0 0 -22px;
+
+            height: 15px;
+            width: 17px;
+        }
+        &-text {
+            border-bottom: 1px dashed #C2C2C2;
+            font-size: 17px;
+        }
+        &-product {
+            font-size: 14px;
+            font-family: "ProximaNova-SemiboldIt";
+            color: rgb(185, 131, 72);
+            line-height: 1.286;
+
+            padding-left: 5px;
+            margin-left: 10px;
+            border-left: 1px solid #CBA276;
+        }
+    }
+    &__bottom {
+        background: black;
+        .nav-submenu {
+            padding: 10px 20px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            &__items {
+                &:first-child::before {
+                    content: "";
+                    position: absolute;
+                    background: url(../img/header/submenu/logo.png) center no-repeat;
+                    margin: -2px 0 0 -58px;
+
+                    height: 36px;
+                    width: 45px;
+                }
+                padding-left: 68px;
+                font-family: "ProximaNova-Regular";
+            }
+            h1, p {
+                text-transform: uppercase;
+                color: white;
+            }
+            &__text:first-child {
+                font-size: 19px;
+            }
+            &__text:last-child {
+                margin-top: 2px;
+                font-size: 12px;
+            }
+            &__list {
+                display: flex;
+                &-items {
+                    &:last-child a {
+                        margin-right: 0;
+                    }  
+                }
+                &-items a {
+                    margin-right: 2.6em;
+                    
+                    font-size: 16px;
+                    letter-spacing: 2px;
+                    font-family: "ProximaNovaCond-Regular";
+                    color: rgb(255, 255, 255);
+                    text-transform: uppercase;
+                    line-height: 1.2;
+                    
+                    &:hover {
+                        border-bottom: 1px dashed #C2C2C2;
+                    }
+                }
+            }
+        }
+    }
+}
